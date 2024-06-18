@@ -1,7 +1,8 @@
+
 body{
     display: flex;
-    flex-direction: row;
-    justify-content: center; 
+    flex-direction: row; 
+    justify-content: space-between; 
     align-items: center;
     background-image: url('./images/bg-desktop.png');
     background-repeat: no-repeat;
@@ -14,12 +15,16 @@ body{
 /* justify works in column align works in rows */
 
 .main-container{
-    justify-content: space space-evenly;
-    
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+     */
 }
 
 .first-container{
         display: flex;
+        flex-direction: row;
         align-items: center;
         width: 325px;
         height: 200px;
@@ -29,8 +34,8 @@ body{
 
 .second-container{
     display: flex;
-    flex-direction: column;
-    align-items: last baseline;
+    flex-direction: row;
+    align-items: center;
     width: 500px;
     height: 150px;
     color: white;
@@ -38,13 +43,17 @@ body{
     border-radius: 15px 15px 15px 15px;
 }
 
-/* {
-    display: flex;
-    background-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
-    border-radius: 2px;
-    width: 400px;
-    height: 10px;
-} */
+
+    
+
+/* progress::-moz-progress-bar{
+    background-color:  hsl(228, 56%, 26%);
+}
+progress::-webkit-progress-bar {
+    background: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+ } */
+
 .icon-group{
 display: flex;
 justify-content: space-around;
@@ -52,7 +61,7 @@ justify-content: space-around;
 
 .icons{
     background-color: hsl(229, 57%, 11%);
-    flex-direction: ;
+    /* flex-direction: ; */
     padding: 6px;
     border-radius: 6px;
       
@@ -63,3 +72,13 @@ justify-content: space-around;
     justify-content: space-around;
 }
 
+
+.bar{
+    display: grid;
+    align-content: center;
+}
+progress{
+    
+    -webkit-appearence:none;
+    -webkit-progress-bar: hsl(229, 57%, 11%);
+}
