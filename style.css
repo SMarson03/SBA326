@@ -13,7 +13,6 @@ body{
 /* justify works in column align works in rows */
 
 .main-container{
-    border: 1px solid red;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -33,29 +32,15 @@ body{
         border-radius: 15px 100px 15px 15px;
 }
 
-.second-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 500px;
-    height: 150px;
-    color: white;
-    background-color: hsl(228, 56%, 26%);
-    border-radius: 15px 15px 15px 15px;
-}
-
-
-    
+ 
 .FyloSection{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 64px;
       
-       
+    
 }
-
-
 
 .icon-group{
     margin-top: 48px;
@@ -72,23 +57,63 @@ justify-content: space-around;
       
 }
 
-.description{
-    font-size: 24px;
-    font-weight: 400;
+.second-container{
     width: 100%;
+    justify-content: space-between;
+     /* align-items: center; */
+    width: 500px;
+    height: 150px;
+    color: white;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 15px 15px 15px 15px;
+}
+.description{
+    padding: 30px;
     text-align: center;
+    width: 100%;
+    font-size: 18px;
 }
+
 .lower-text{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-}
-
-
-.bar{
-    display: grid;
-    align-content: center;
-}
-progress{
-    accent-color: hsl(6, 100%, 80%);
-    -webkit-appearence:none;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+   
     }
+
+.text{
+    font-weight: 700;
+    font-size: 12px;
+    width: 100%;
+    
+}
+
+.progress-bar{
+    width: 75%;
+    background-color: hsl(229, 57%, 11%);
+    padding: 6px;
+    border-radius: 16px;
+    margin: 0px 0px 8px 64px;
+    
+    
+}
+
+.progress-bar-color{
+    width: 75%;
+    background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 16px;
+}  
+
+.ball {
+    width: 16px;
+    height: 16px;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 16px;
+}
